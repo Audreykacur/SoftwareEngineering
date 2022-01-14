@@ -1,4 +1,4 @@
-Read Chapter 1 in the textbook 
+POWER POINT NOTES
 
 Analysis
 - Analysis focuses on an investigation of the problem and requirements.
@@ -48,9 +48,9 @@ These diagrams show software classes.
 Three Ways to Apply UML
 - UML as sketch – informal and incomplete diagrams created to explore difficult parts of the problem or solution.
 - UML as blueprint – relatively detailed design diagrams used either for
-	- Reverse engineering
+	- Reverse engineering: to visulize and better understand exsisting code in UML diagrams 
 	- Code generation (forward engineering)
-- UML as programming language
+- UML as programming language : 
 
 Three Perspectives to Apply UML
 - Conceptual perspective – the diagrams describe real things.

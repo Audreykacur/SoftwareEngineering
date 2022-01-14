@@ -1,3 +1,5 @@
+CHAPTER 1 NOTES
+
 OOD - object oriented design 
 OOA - object oriented analysis
 
