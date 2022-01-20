@@ -97,6 +97,31 @@ Domain model (Analysis step: conceptual level)
 - describes just the problem : creatd so we understand the problem 
 - this is how to undersstand the requirements 
 
+- want to analysis some requirements 
+	- try to capture the 
+	- talking about the requirements 
+		- Library example: 
+			 - implement recommend a book 
+			 	- you need information abou the book and a copy of the book 
+			 	- how do you recommned the book : genre, author, rating 
+			 		- do we want to recommend based on a single book or from the users hisory 
+			 			we will do it based on a single book that the user has read 
+
+
+
+- reader will come and get a hitch hikers guide to the galexy --> there will be a recommendations that uses the hitchikers guide and it recommends another book (so long, and thanks for all the fish) that is associated to the book the user previously had written --> we will recommend the same books to everyone that has previously read the hitch hicker guiide book --> books are recommended based just on the books that the user has read 
+
+
+		| author |  <-- 	 | book |  -->  | copy |
+			 			   	   ISBN
+					   	     Publisher
+							   Genre
+
+
+
+
+
+
 
 
 
@@ -177,17 +202,17 @@ Three Perspectives to Apply UML
 		- INTERATION 1: Find a book and sorting & check out a book 
 	- analysis of requirements in detail
 	- 
-	- interations 4 weeks 
-	-  select requirements --> write down scenarios --> design partial system --> implement partial system --> test the result --> partial system --> show to user --> feedback --> modify the system --> iteration 2
-
+	- interations are 4 weeks long
+	-  select requirements --> write down scenarios  --> design partial system --> implement partial system --> test the result --> partial system --> show to user --> feedback --> modify the system --> iteration 2 --> repeat iteraetion 1 steps and integrate with previous iterations 
 	- ITERATION 2 : return book and add book
+	- ITERATION 3 : remove book & modify book
 
 
 Iterative Development
 - **INTERATIONS** 
 - Development is organized into a series of short, fixed-length (for example, threeweek) mini-projects called iterations.
 
-- The outcome of each iteration is a tested, integrated, and executable partial system.
+- The outcome of each iteration is a tested : integrated, and executable partial system.
 
 - Each iteration includes its own requirements analysis, design, implementation, and testing.
 
@@ -196,6 +221,7 @@ Iterative Development
 - Because feedback and adaptation evolve the specifications and design, it is also known as iterative and evolutionary development.
 
 - Each iteration involves choosing a small subset of the requirements, and quickly designing, implementing, and testing.
+	- pick the ones that are most important or are the riskiest (late fee because that would require a payment meethod)
 
 - The act of taking a small step before all requirements are finalized, or the entire design is speculatively defined, leads to rapid feedback from the users, developers, and tests (such as load and usability tests).
 
@@ -239,24 +265,36 @@ Iterative Development
 
 
 Benefits of Iterative Development
-- Less project failure, better productivity, and lower defect rates
+- Less project failure, better productivity, and lower defect rates	
+	- project failure: system was not completed (could not implement requirments, to expensive, budget ran out)
+	- better productivity: develop the system in shorter time and with fewer requirements 
+	- lower defect rate: less errors and bugs (not 250 bugs, there will be some bugs but will be lower)
+	- goal is to develop quality software 
 - Early rather than late mitigation of high risks (technical, requirements, objectives, usability, and so forth)
+	- do the risky iterations in the begining
 - Early visible progress
+	- you see progress after every iteration
 - Early feedback, user engagement, and adaptation leading to a refined system that more closely meets the real needs of the stakeholders.
-- Managed complexity; the team is not overwhelmed by “analysis paralysis”.
+	- feedback from the user is good because it usually gets misunderstood the first time around 
+	- goal: to develop the system to meet the requierments so communication is important 
+- Managed complexity; the team is not overwhelmed by “analysis paralysis”
 - The learning within an iteration can be methodically used to improve the development process itself.
-	
 	- you can have someone from the buisness that knows what they want in the system to be a part of the development team 
 	- take what works for you and accomidate it to the situation 
+
+
+
 
 
 
 Timeboxing
 - A typical iteration lasts between two and six weeks.
 	- fixed length iteration
-	- DESCOPE - if requirements cant be meet they will be postponed (will be a partial iteration: ex. you may not be able to transfer money)
+	- DESCOPE - if requirements cant be meet they will be postponed (will be a partial iteration: ex. you may not be able to transfer money) (you ask a week before the end of the iteration if all the steps will be able to be implemented in that time if not then thats when you descope)
 - A key idea is that iterations are timeboxed (fixed in length).
 - If it seems that it will be difficult to meet the deadline, the recommended response is to remove tasks or requirements from the iteration, and include them in a future iteration, rather than slip the completion date
+
+
 
 
 
@@ -265,10 +303,45 @@ Waterfall
 - It is strongly associated with high rates of failure, lower productivity, and higher defect rates (than iterative projects).
 - Analysis -> Design -> Implementation -> Testing -> Deployment 
 
+- analysis all the requirements --> design everything--> implement everything --> test everything --> deploy everything
+- Problem: do not ask for feedback, if there is a change in requirements then it doesnt mean any thing to us because we already passed that step, 
+- if in implementation then you have to go all the way back to the analysis step 
+
+
+
+
+
 Change in Software Development
 - Change is the constant on software projects.
+	- Changes are common 
+	- sometimes software is dependant on the law: if a law is changed then the software need a change 
 - Any analysis, modeling, development, or management practice based on the assumption that things are long-term stable is fundamentally flawed.
+- *Agile* : we are able to modify the system imediately 
 - Iterative and evolutionary methods assume and embrace change and adaptation of partial and evolving specifications, models, and plans based on feedback.
+
+
+
+
+Topics for the project 
+- will use interactive requirements 
+- you will select one requirement and implement it 
+- you will select another requirement and implement is 
+- you want more than one requirement 
+- requirements can be added if not enough (good if topic can expand)
+- in the past 3 iterations are usually completed 
+- the system is not required to be finished 
+- if the iteration is three weeks 3 times 3 = 9 weeks 
+- the labs are surrounded around the project 
+- the partial ssystem is checked at the end of each iteration 
+- a plan is for a single iteration 
+- pointers are given 
+- 10 - 15% of requirements per iteration (if 20 requirements then 2 requirements per iterations )
+
+
+
+In the use cases a user is the actor and the actor uses the system and finds out what is needed 
+- 
+
 
 
 
