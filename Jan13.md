@@ -147,6 +147,20 @@ Three Perspectives to Apply UML
 
 
 
+- FIRST STEP: What are the requirements for the system to find a book
+	- its important to have all the requirements  
+		- library card
+		- return and checkout books 
+		- support late fees
+		- find book + sorting 
+		- function: allows librarian to add, delete and modify books 
+		- view leases and history for librarian and or user 
+		- request book 
+		- recommend books based on other books you have read 
+		- rating system 
+		- sign up 
+		- view analytics
+
 
  Unified Process
  
@@ -159,9 +173,14 @@ Three Perspectives to Apply UML
 	- Agile Unified Process (UP)
 		- imediatly take action when a change is required 
 
+- SECOND STEP: find the requirements you want to complete for the first interation (Analysis: before writing code)
+		- INTERATION 1: Find a book and sorting & check out a book 
+	- analysis of requirements in detail
+	- 
+	- interations 4 weeks 
+	-  select requirements --> write down scenarios --> design partial system --> implement partial system --> test the result --> partial system --> show to user --> feedback --> modify the system --> iteration 2
 
-
-
+	- ITERATION 2 : return book and add book
 
 
 Iterative Development
