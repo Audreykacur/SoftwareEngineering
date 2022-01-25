@@ -61,47 +61,109 @@ Iteration 1
 
 Iterations 2 to 6
 • Repeat for iterations 2, 3, 4, 5 and 6.
-• At the end of iteration 6, perhaps 80-90% of the requirements have been written in detail, but only 20% of the system has been implemented.
+• At the end of iteration 6, perhaps 70-90% of the requirements have been written in detail (analysied), but only 20 - 50% of the system has been implemented.
+	- we don't need to analyse requirements after this 
 • We are perhaps only 30% into the duration of the overall project; this is the end of the elaboration phase.
 
 
+| elaberation phase 1- 6 | construction phase 7 - 15 (spend more time on implementation and testing) |
+
+
 Risk-Driven and Client-Driven
-• Risk-driven and client-driven iterative planning means that the goals of the early 
-iterations are chosen to
-oIdentify and drive down the highest risks.
-oBuild visible features that the client cares most about.
+• Risk-driven (implement the risky requirements first; have plan of how to midigate them) and client-driven (what requirements are important to the client) iterative planning means that the goals of the early iterations are chosen to
+	o Identify and drive down the highest risks.
+	o Build visible features that the client cares most about.
 
 
 Architecture-Centric
-Architecture-centric iterative development means that early iterations focus on 
-building, testing, and stabilizing the core architecture.
-oNot having a solid architecture is a common high risk.
+• Architecture-centric iterative development means that early iterations focus on building, testing, and stabilizing the core architecture.
+	o Not having a solid architecture is a common high risk.
+	- build a stable architecture as soon as possible 
+	- architecture : high level description of the architecture
+	- web browser - conected both ways - web server - connected --> database 
+			     									- connected --> identity manager
+	- if you need identity manager do those as soon as possible 		     									
 
 
 UP Best Practices
-•Tackle high-risk and high-value issues in early iterations.
-•Continuously engage users for evaluation, feedback, and requirements.
-•Build a cohesive, core architecture in early iterations.
-•Continuously verify quality; test early, often, and realistically.
-•Do some visual modeling (with the UML).
-•Carefully manage requirements.
-•Practice change request and configuration management.
+• Tackle high-risk and high-value issues in early iterations.
+• Continuously engage users for evaluation, feedback, and requirements.
+• Build a cohesive, core architecture in early iterations.
+• Continuously verify quality; test early, often, and realistically.
+• Do some visual modeling (with the UML).
+• Carefully manage requirements.
+• Practice change request and configuration management.
 
 
 UP Phases
-•Inception –approximate vision, business case, scope, vague estimates
-•Elaboration –refined vision, iterative implementation of the core architecture, 
-resolution of high risks, identification of most requirements and scope, more 
-realistic estimates
-•Construction –iterative implementation of the remaining lower risk and easier 
-elements, and preparation for deployment
-•Transition –beta tests, deployment
+• Inception – approximate vision, business case, scope, vague estimates
+• Elaboration – refined vision, iterative implementation of the core architecture, resolution of high risks, identification of 								most requirements and scope, more realistic estimates
+• Construction – iterative implementation of the remaining lower risk and easier elements, and preparation for deployment
+•Transition – beta tests, deployment
 
 
 UP Disciplines
-Business modeling –the domain model that visualizes noteworthy concepts in 
-the application domain.
-•Requirements –the use case model and supplementary artifacts to capture 
-functional and non-functional requirements.
-•Design –the design model visualizes software classes.
+• Business modeling –the domain model that visualizes noteworthy concepts in the application domain.
+• Requirements –the use case model and supplementary artifacts to capture functional and non-functional requirements.
+• Design –the design model visualizes software classes.
+
+
+
+Unified Process
+ADIT
+
+
+
+Task 
+- use unified process to implement a information system called library
+- requirements for an information system 
+
+- use cases 
+	- veiw transaction or transfer money: describes the interaction between the user and the system and usually has a result 
+		- in english text or a diagram
+		- model the system and understand the process
+
+
+- FIRST STEP: What are the requirements for the system to find a book
+	- its important to have all the requirements  
+		- library card
+		- return and checkout books 
+		- support late fees
+		- book sorting 
+		- function: allows librarian to add, delete and modify books 
+		- view leases and history for librarian and or user 
+		- request book 
+		- recommend books based on other books you have read 
+		- rating system 
+		- sign up 
+		- view analytics
+
+
+		- find book 
+
+
+o  Library example: 
+	- implement recommend a book 
+	 	- you need information abou the book and a copy of the book 
+		- how do you recommned the book : genre, author, rating 
+	 		- do we want to recommend based on a single book or from the users hisory 
+	 	      we will do it based on a single book that the user has read 
+
+
+
+
+- what are the important requirements 
+- non functional requirements are specific 
+
+
+
+
+
+
+
+
+
+
+
+
 
