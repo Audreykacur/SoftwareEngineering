@@ -46,7 +46,7 @@ Iteration 1
 	-  unit : test each method/ unit or function (automated: write code to test code; write a function that solves a quadratic equation and use the method to see if the result is correct; test how ever many times that you need to hit all the solution possibilities)
 	- acceptance : test each use case
 	- load : test non functional requirements (simulate 10,000 users; use the user to test the system under a heavy load)
-	- usability : test tests the user interface (design a user inteerface so it is intuative; so you can usee the interface withhout 					  training; how difficult is it for a user to complete a simple task)
+	- usability : test tests the user interface (design a user interface so it is intuative; so you can use the interface without 					  training; how difficult is it for a user to complete a simple task)
 
 • One week before the end of iteration, ask the team if the original iteration goals can be met.
 	o If not, de-scope the iteration and put some goals back on the “to do” list.
@@ -62,11 +62,11 @@ Iteration 1
 Iterations 2 to 6
 • Repeat for iterations 2, 3, 4, 5 and 6.
 • At the end of iteration 6, perhaps 70-90% of the requirements have been written in detail (analysied), but only 20 - 50% of the system has been implemented.
-	- we don't need to analyse requirements after this 
+	- we don't need to analyze requirements after this 
 • We are perhaps only 30% into the duration of the overall project; this is the end of the elaboration phase.
 
 
-| elaberation phase 1- 6 | construction phase 7 - 15 (spend more time on implementation and testing) |
+| elaboration phase 1- 6 | construction phase 7 - 15 (spend more time on implementation and testing) |
 
 
 Risk-Driven and Client-Driven
@@ -80,8 +80,8 @@ Architecture-Centric
 	o Not having a solid architecture is a common high risk.
 	- build a stable architecture as soon as possible 
 	- architecture : high level description of the architecture
-	- web browser - conected both ways - web server - connected --> database 
-			     									- connected --> identity manager
+	- web browser - connected both ways - web server - connected --> database 
+	--> identity manager
 	- if you need identity manager do those as soon as possible 		     									
 
 
@@ -112,6 +112,30 @@ UP Disciplines
 Unified Process
 ADIT
 
+A - Analysis
+D - Design
+I - Integrate
+T - Test
+
+Day 1 and 2 : requirement workshop
+	- determine requirements and select important requirements 
+
+Iteration 1 : 
+		A - Analysis
+		D - Design
+		I - Integrate
+		T - Test
+		requirement workshop
+
+Iteration 2 : 
+		A - Analysis
+		D - Design
+		I - Integrate
+		T - Test
+		requirement workshop
+
+Iteration 3 : 
+
 
 
 Task 
@@ -119,8 +143,8 @@ Task
 - requirements for an information system 
 
 - use cases 
-	- veiw transaction or transfer money: describes the interaction between the user and the system and usually has a result 
-		- in english text or a diagram
+	- view transaction or transfer money: describes the interaction between the user and the system and usually has a result 
+		- in English text or a diagram
 		- model the system and understand the process
 
 
@@ -144,8 +168,8 @@ Task
 
 o  Library example: 
 	- implement recommend a book 
-	 	- you need information abou the book and a copy of the book 
-		- how do you recommned the book : genre, author, rating 
+	 	- you need information about the book and a copy of the book 
+		- how do you recommened the book : genre, author, rating 
 	 		- do we want to recommend based on a single book or from the users hisory 
 	 	      we will do it based on a single book that the user has read 
 
@@ -154,6 +178,201 @@ o  Library example:
 
 - what are the important requirements 
 - non functional requirements are specific 
+
+
+
+Functional 
+- store book info 
+- add book 
+- Late fees
+- # of copies of a single book
+- delete book 
+- account/ card 
+- Author 
+- review
+- request book
+- Integrate w/ legacy system (Could be functional)
+- modify book
+- system back up
+- modify account
+- checkout book 
+- search book 
+- due date
+- return book
+- create a reservation 
+- cancel reservation 
+- report lost book 
+- renew card
+- cancel membership 
+- scan book 
+- Donate money 
+- Provide navigation to library 
+	- directions
+	- when library is open 
+
+nonFunctional
+- Account security 
+- 10,000 sign ins at the same time 
+- describe how fast the system needs to be (it is subjective if not defined) ex. a search needs to take less than a second or 90% in time < 500 ms (some query may take more time but that's okay as long as most are)
+- web application 
+- you could say that you want to update the system but this should be expected and no need to list it 
+- Support multiple languages (could be functional)
+- ADA (could be functional)
+	- accomadate for disabilities 
+
+
+Use case : 
+
+transform functional requirements to use cases 
+
+reader --> search for book 
+		--> pay late Fee
+		--> request book 
+		--> Report loss
+		--> rate a book 
+		--> create account 
+		--> donate money
+		--> cancel a membership 
+		--> return book 
+		--> create reservation - cancel 
+		--> navigate
+		--> modify account
+
+
+librarian --> add book
+			--> delete book 
+			--> scan book
+			--> modify book
+			--> checkout book
+
+
+
+modeling : to better understand the problem 
+
+
+						| Reservation |
+					_______________________
+							Date
+					| 0				| 0 
+					|				|
+					|				|
+					|				|
+					| 1				| 1
+
+			 | Reader | 		  | Book | 						| Author | 
+			____________		____________				________________
+				name 		 		title 					      name 
+				email						| 1		0---1		year of birth
+			| 1								|					  country
+			|								|
+			|								|
+			|								| 
+			| 0 							| 0				  
+
+			| Lease | 				| Copy |
+		________________		_______________
+			from 					id
+			thru 		0 -----1
+			status
+
+
+
+
+Determine important requirements 
+Write down the scenario
+
+	search for book 
+--------------------------	
+1. the user selects search
+2. The system display a form w/ the following fields
+	- title
+	- author
+	- year 
+	- publisher 
+3. the user fills in the form and submits it 
+4. the system validates the information entered 
+	- the system will validate the values 
+	- if at least one is valid (not empty) 
+	- it will perform the search if valid 
+	- display the result 
+
+
+		Checkout book 
+---------------------------
+1. The user selects checkout
+3. the user selects library card number 
+	- enters the library card number 
+	- system checks if user needs to pay a late fee 
+		- notifies user that they owe a fee
+2. the user determines book number
+	- enters the book number (if wont scan) or scans the book 
+	- clicks add book if another book wants to be check out 
+3. the system validates the book number with books in the system
+4. the user number is connected with the books scanned in 
+5. the librarian selects finished 
+
+
+		Return book
+---------------------------
+1. The user selects return book 
+3. the user selects library card number 
+	- enters the library card number 
+	- system checks if user needs to pay a late fee 
+		- notifies user that they owe a fee
+2. the user determines book number
+	- enters the book number (if wont scan) or scans the book 
+	- clicks add book if another book wants to be returned
+3. the system validates the book number with books checked out
+4. the user number is disconnected with the books returned 
+5. the user selects finished 
+
+
+	Design architecture
+--------------------------
+web browser <-----> web server <------> DB
+						^				^
+						|				|
+						|				|
+						|
+				   (down arrow)
+				 Identity manager
+
+
+ during iteration determine what is not possible to finish
+-------------------------------------------------------------
+- we might not have time to implement regular expression ABC*
+
+to do
+- regular expression 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
